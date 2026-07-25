@@ -1,87 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+     <title>Le Contes | Pastelería artesanal</title>
 </head>
 <body>
     <header>
     <h1> Le Contes </h1>
-        <nav> <!-- lista de menu-->
-        <a href="pages/menu.html">menu</a>
-        <a href="pages/el_espacio.html">El espacio</a>
-        <a href="pages/contacto.html">contacto</a>  <!-- alt+ shif + fecha para abajo -->
-        <a href="pages/sobre_nosotros.html">sobre_nosotros</a>
-        <a href="#">inicio</a>
+        <nav aria-label="Navegación principal"> 
+         <ul><li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li></ul>
        </nav>
-
-    <h2> Te invitamos a que pases y te quedes un rato</h2> 
-
-     <h3> Información de tu interes</h3> 
-
-     <h2>
-        <h3>El plato más pedido este mes:</h3>
-     </h2>
-    </header>
+    </header> 
     <main>
-        <section>
-            <h2>Productos destacados:</h2>
-            <div>
-                <h3>Crossant</h3>
-            <article>
-                <img src="image/crossant.jpeg" alt="Crossant, clasico o relleno">
-                
-            </article>
-            </div>
-        </section>
-        <section>
-            <h2>Promociones</h2>
-            <article>
-                 <p>Docena de media lunas $17000</p>
-                 <p>Torta de Crème Brûlée $20000</p>
-                 <p>Galletitas New York, 6 uniades $10000</p>              
-               
-            </article>
-        </section>
-        <section>
-            <h2>Opiniones</h2>
-            <div>
-            <article>
-                <p>Muy bueno todo</p>
-                <h3>Laura Valentina</h3>
-            </article>
-            <article>
-                <p>muy rico todo </p>
-                <h3>Ariana Ramires</h3>
-            </article>
-            </div>
-        </section>
-        <section>
-            <h2>Medios de pagos</h2>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <div>
-                <h3>Redes sociales</h3>
-                    <ul> <!-- contiene la lista -->
-                        <li><a href="http://www.facebook.com"  target="_blank">Facebook</a></li> <!-- es una lista --><!-- target blan es para abrir en otra pestaña -->
-                        <li><a href="http://www.instagram.com"  target="_blank">Instagram</a></li> <!-- es una lista --><!-- target blan es para abrir en otra pestaña -->
-                        <li><a href="http://www.x.com"  target="_blank">X</a></li> <!-- es una lista --><!-- target blan es para abrir en otra pestaña -->
-                        <li><a href="http://www.youtube.com"  target="_blank">youtube</a></li> <!-- es una lista --><!-- target blan es para abrir en otra pestaña -->      
-                    </ul>
-            </div>
-            <div>
-
-            </div>
-            <div>
-                <p>copyright 2026</p>
-                <p>Calle 1234</p>
-                <p>Dias horarios: 1 Sabado cada 15 dias</p>
-            </div>
-        </div>
-    
-    </footer>
-</body>
+    <section id="inicio"> 
+        <h1>Te invitamos a pasar y quedarte un rato</h1> 
+        <p> En Le Contes elaboramos productos de pastelería artesanal para acompañar tus momentos especiales. </p> 
+        <figure> <img src="image/crossant.jpeg" alt="Croissant artesanal dorado, de sabor clásico o relleno" > 
+            <figcaption> Nuestro croissant artesanal, disponible clásico o relleno. </figcaption> 
+        </figure> 
+    </section> 
+    <section id="sobre-nosotros"> 
+        <h2>Sobre nosotros</h2> 
+        <article> <h3>La historia de Le Contes</h3> 
+            <p> Le Contes es una pastelería artesanal que busca combinar recetas clásicas con sabores y presentaciones originales. </p> 
+        </article> 
+    </section> 
+        <section id="productos"> 
+            <h2>Información de tu interés</h2> 
+            <ul> <li>El producto más pedido del mes</li> 
+                <li>Productos destacados</li> 
+                <li>Promociones especiales</li> </ul> 
+            </section> 
+            <section> 
+                <h2>Promociones:</h2> 
+                <article> <h3>Ofertas del mes</h3> 
+                    <ul> <li>Docena de medialunas: $17.000</li>
+                    <li>Torta de crème brûlée: $20.000</li> 
+                    <li>Seis galletitas New York: $10.000</li> </ul> 
+                </article> 
+            </section> 
+            <section> 
+                <h2>Opiniones</h2> 
+                <article> 
+                    <h3>Laura Valentina</h3> 
+                    <p>Muy bueno todo.</p> 
+                </article> 
+                <article> 
+                    <h3>Ariana Ramírez</h3> 
+                    <p>Muy rico todo.</p> 
+                </article> 
+            </section> 
+            <section> 
+                <h2>Medios de pago</h2> 
+                <ul> <li>Efectivo</li> 
+                    <li>Transferencia bancaria</li> 
+                    <li>Tarjetas de débito y crédito</li> 
+                </ul> 
+            </section> 
+                <section id="contacto"> 
+                   <h2>Contacto</h2> <p>Calle 1234</p> 
+                <p>Atención: un sábado cada quince días.</p> 
+            </section> 
+        </main> 
+        <footer> 
+        <p>&copy; 2026 Le Contes</p> 
+            <nav aria-label="Redes sociales"> 
+                <h2>Redes sociales</h2> 
+                <ul> <li> <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" > Facebook </a> </li> 
+                <li> <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" > Instagram </a> </li> 
+                <li> <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" > X </a> </li> 
+                <li> <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" > YouTube </a> </li> </ul>
+            </nav> 
+        </footer> 
+    </body> 
 </html>
