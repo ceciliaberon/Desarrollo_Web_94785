@@ -1,6 +1,6 @@
 *{
-  padding: 1;
-  margin: 0.5;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -25,15 +25,13 @@ header {
 h1{
     font-size: 30px;
     color: #291D1B;
-    text-align: underline;
+    text-align: center;
 }
 
 h2{
     font-size: 20px;
     color: #291D1B;
     text-align: left;
-    display: flex;
-    flex-direction: column;
 }
 h3{
     font-size: 15px;
@@ -64,21 +62,15 @@ article ul li {
 }
 
 footer {
-  background-color: #eaecee;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  
+    display: flex;
+    flex-direction: column;
+    background-color: #eaecee;
+    color: #0f0d0d;
+    font-size: 1rem;
 }
 
 figcaption{
     color: #0f0d0d;
-    text-decoration: none;
-    font-size: 10px;
-}
-
-footer{
-        color: #0f0d0d;
     text-decoration: none;
     font-size: 10px;
 }
