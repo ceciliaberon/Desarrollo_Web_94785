@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  margin: 0;
+  margin: 1;
   box-sizing: border-box;
 }
 
@@ -28,24 +28,24 @@ header {
 }
 
 h1{
-    font-size: 30px;
+    font-size: 42px;
     color: #291D1B;
     text-align: center;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 32px;
     color: #291D1B;
     text-align: left;
 }
 h3{
-    font-size: 15px;
+    font-size: 20px;
     color: #291D1B;
     text-align: left;
 }
 
 p{
-    font-size: 10px;
+    font-size: 16px;
     color: #291D1B;
     text-align: left;
 }
@@ -56,14 +56,14 @@ section{
 }
 
 nav ul li a {
-  font-size: 10px;
+  font-size: 16px;
   color: #0f0d0d;
   text-decoration: none;
 }
 article ul li {
     color: #0f0d0d;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 footer {
@@ -71,11 +71,11 @@ footer {
     flex-direction: column;
     background-color: #eaecee;
     color: #0f0d0d;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 figcaption{
     color: #0f0d0d;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 16px;
 }
