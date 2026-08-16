@@ -1,0 +1,186 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Google Sans Flex", sans-serif;
+  background-color: #e37f7f;
+  color: #291d1b;
+  padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #eaecee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo dentro del header */
+
+.header_logo {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* Navegación principal del header */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+  font-size: 16px;
+  color: #0f0d0d;
+  text-decoration: none;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+/* Secciones principales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* Título principal */
+
+h1 {
+  font-size: 34px;
+  color: #291d1b;
+  text-align: center;
+}
+
+/* Títulos de secciones */
+
+h2 {
+  font-size: 32px;
+  color: #291d1b;
+  text-align: left;
+}
+
+/* Subtítulos dentro de artículos */
+
+h3 {
+  font-size: 20px;
+  color: #291d1b;
+  text-align: left;
+}
+
+/* Párrafos */
+
+p {
+  font-size: 16px;
+  color: #291d1b;
+  text-align: left;
+}
+
+
+/* =========================
+   ARTICLES Y LISTAS
+========================= */
+
+article ul li {
+  color: #0f0d0d;
+  font-size: 16px;
+}
+
+/* Sección específica de opiniones */
+
+.opiniones {
+    display: flex;
+    flex-direction:row;
+    gap: 40px;
+    
+    background-color: #eaecee;
+    color: #131313;
+    padding: 40px 5px;
+    width: 100%;
+    
+}
+.opinion_contenedor{
+    display: flex;
+    flex-direction:row;
+    gap: 40px;
+}
+.opiniones_hijo {
+
+    text-align: left;
+    flex: 1;
+    padding: 10px;
+    background-color: #eaecee;
+}
+
+
+/* =========================
+   FIGURE E IMÁGENES
+========================= */
+
+.imagen {
+  width: 300px;
+  height: auto;
+}
+
+figcaption {
+  color: #0f0d0d;
+  font-size: 16px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  display: flex;
+  flex-direction: column;
+     gap: 20px;
+    padding: 20px;
+  background-color: #eaecee;
+  color: #0f0d0d;
+  font-size: 16px;
+}
+.menu-productos {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-productos li {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaecee;
+}
+
+.el_espacio {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.el_espacio li {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaecee;
+}
