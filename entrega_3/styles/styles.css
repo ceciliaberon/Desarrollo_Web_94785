@@ -13,8 +13,7 @@ body {
   font-family: "Google Sans Flex", sans-serif;
   background-color: #e37f7f;
   color: #291d1b;
-  border: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 
@@ -111,11 +110,26 @@ article ul li {
 
 .opiniones {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    gap: 40px;
+    
     background-color: #eaecee;
     color: #131313;
-    padding: 10px 5px;
-    width: 30%;
+    padding: 40px 5px;
+    width: 100%;
+    
+}
+.opinion_contenedor{
+    display: flex;
+    flex-direction:row;
+    gap: 40px;
+}
+.opiniones_hijo {
+
+    text-align: left;
+    flex: 1;
+    padding: 10px;
+    background-color: #eaecee;
 }
 
 
@@ -146,4 +160,27 @@ footer {
   background-color: #eaecee;
   color: #0f0d0d;
   font-size: 16px;
+}
+.menu-productos {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-productos li {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaecee;
+}
+
+.el_espacio {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.el_espacio li {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaecee;
 }
