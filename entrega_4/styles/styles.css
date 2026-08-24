@@ -167,6 +167,11 @@ footer {
   color: #0f0d0d;
   font-size: 16px;
 }
+
+/* =========================
+   menu
+========================= */
+
 .menu-productos {
     display: flex;
     gap: 20px;
@@ -177,8 +182,52 @@ footer {
     flex: 1;
     padding: 20px;
     background-color: #eaecee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+
+/* =========================
+   menu tablet
+========================= */
+
+@media (min-width: 768px) {
+
+    .menu-productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-productos li {
+        flex: 1 1 45%;
+    }
+
+}
+/* =========================
+   menu desktop
+========================= */
+
+@media (min-width: 1024px) {
+
+    .opinion_contenedor {
+        flex-direction: row;
+    }
+
+    .menu-productos {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .menu-productos li {
+        flex: 1;
+    }
+
+}
+/* =========================
+   espacio
+========================= */
 .el_espacio {
     display: flex;
     gap: 20px;
@@ -189,4 +238,47 @@ footer {
     flex: 1;
     padding: 20px;
     background-color: #eaecee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+}
+
+/* =========================
+   espacio tablet
+========================= */
+
+@media (min-width: 768px) {
+
+    .el_espacio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .el_espacio li {
+        flex: 1 1 45%;
+    }
+
+}
+
+
+/* =========================
+   espacio desktop
+========================= */
+
+@media (min-width: 1024px) {
+
+    .opinion_contenedor {
+        flex-direction: row;
+    }
+
+    .el_espacio {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .el_espacio li {
+        flex: 1;
+    }
+
 }
