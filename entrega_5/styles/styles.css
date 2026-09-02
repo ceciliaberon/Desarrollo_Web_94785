@@ -3,59 +3,92 @@
 ========================= */
 
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Google Sans Flex", sans-serif;
-  background-color: #e37f7f;
-  color: #291d1b;
-  padding: 20px;
+    font-family: "Google Sans Flex", sans-serif;
+    background-color: #e37f7f;
+    color: #291d1b;
+    padding: 20px;
 }
 
 
 /* =========================
-   HEADER
+   HEADER Y NAV BAR
 ========================= */
+
 header {
     background-color: #eaecee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    border-radius: 10px;
 }
 
-/* Logo dentro del header */
+.navbar {
+    width: 100%;
+    background-color: #eaecee;
+}
 
 .header_logo {
-  font-size: 42px;
-  font-weight: 700;
+    font-size: 42px;
+    font-weight: 700;
+    color: #291d1b;
 }
 
-/* Navegación principal del header */
-
 nav ul {
-    display: flex;
-    align-items: center;
     list-style: none;
     gap: 20px;
     margin: 0;
     padding: 0;
 }
-nav ul li a {
-  font-size: 16px;
-  color: #0f0d0d;
-  text-decoration: none;
+
+.nav-link {
+    font-size: 16px;
+    color: #0f0d0d;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+.nav-link:hover {
+    color: #e37f7f;
+}
+
+.nav-link:focus {
+    outline: 2px solid #e37f7f;
+    outline-offset: 3px;
+}
+
+.nav-link:active {
+    color: #291d1b;
+}
+
+.navbar-brand {
+    color: #291d1b;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #e37f7f;
+}
+
+.navbar-toggler {
+    border: 1px solid #291d1b;
+}
+
+.datos-contacto {
+    background-color: #f4efef;
+    border-radius: 10px;
+}
 /* =========================
    MAIN
 ========================= */
 
-/* Secciones principales */
+main {
+    width: 100%;
+}
 
 section {
     display: flex;
@@ -64,49 +97,45 @@ section {
     padding: 20px;
     margin-bottom: 30px;
 }
-/* Título principal */
+
+
+/* =========================
+   TEXTOS
+========================= */
 
 h1 {
-  font-size: 30px;
-  color: #291d1b;
-  text-align: left;
+    font-size: 30px;
+    color: #291d1b;
+    text-align: left;
 }
-
-/* Títulos de secciones */
 
 h2 {
-  font-size: 26px;
-  color: #291d1b;
-  text-align: left;
+    font-size: 26px;
+    color: #291d1b;
+    text-align: left;
 }
-
-/* Subtítulos dentro de artículos */
 
 h3 {
-  font-size: 20px;
-  color: #291d1b;
-  text-align: left;
+    font-size: 20px;
+    color: #291d1b;
+    text-align: left;
 }
 
-/* Párrafos */
-
 p {
-  font-size: 16px;
-  color: #291d1b;
-  text-align: left;
+    font-size: 16px;
+    color: #291d1b;
+    text-align: left;
+}
+
+article ul li {
+    color: #0f0d0d;
+    font-size: 16px;
 }
 
 
 /* =========================
-   ARTICLES Y LISTAS
+   OPINIONES
 ========================= */
-
-article ul li {
-  color: #0f0d0d;
-  font-size: 16px;
-}
-
-/* Sección específica de opiniones */
 
 .opiniones {
     display: grid;
@@ -117,6 +146,7 @@ article ul li {
     background-color: #eaecee;
     color: #131313;
     padding: 20px;
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -124,32 +154,36 @@ article ul li {
     grid-area: titulo;
 }
 
-
 .opinion_contenedor {
     grid-area: contenido;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-@media (min-width: 1024px) {
 
-    .opinion_contenedor {
-        flex-direction: row;
-    }
-
-}
 
 /* =========================
-   FIGURE E IMÁGENES
+  IMÁGENES
 ========================= */
 
 .imagen {
-  width: 300px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 figcaption {
-  color: #0f0d0d;
-  font-size: 16px;
+    color: #0f0d0d;
+    font-size: 16px;
+}
+
+
+/* =========================
+   CAROUSEL BOOTSTRAP
+========================= */
+
+.carousel {
+    padding: 20px;
 }
 
 .carousel-img {
@@ -159,131 +193,52 @@ figcaption {
     margin: auto;
     border: 40px solid white;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.7;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid #291d1b;
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+    opacity: 0.5;
+}
+
+
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-  display: flex;
-  flex-direction: column;
-     gap: 20px;
-    padding: 20px;
-  background-color: #eaecee;
-  color: #0f0d0d;
-  font-size: 16px;
-}
-
-/* =========================
-   menu
-========================= */
-
-.menu-productos {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.menu-productos li {
-    flex: 1;
-    padding: 20px;
-    background-color: #eaecee;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #eaecee;
+    color: #0f0d0d;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 
 /* =========================
-   menu tablet
-========================= */
-
-@media (min-width: 768px) {
-
-    .menu-productos {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .menu-productos li {
-        flex: 1 1 45%;
-    }
-
-}
-/* =========================
-   menu desktop
+   DESKTOP
 ========================= */
 
 @media (min-width: 1024px) {
 
     .opinion_contenedor {
         flex-direction: row;
-    }
-
-    .menu-productos {
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .menu-productos li {
-        flex: 1;
-    }
-
-}
-/* =========================
-   espacio
-========================= */
-.el_espacio {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.el_espacio li {
-    flex: 1;
-    padding: 20px;
-    background-color: #eaecee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;   
-}
-
-/* =========================
-   espacio tablet
-========================= */
-
-@media (min-width: 768px) {
-
-    .el_espacio {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .el_espacio li {
-        flex: 1 1 45%;
-    }
-
-}
-
-
-/* =========================
-   espacio desktop
-========================= */
-
-@media (min-width: 1024px) {
-
-    .opinion_contenedor {
-        flex-direction: row;
-    }
-
-    .el_espacio {
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .el_espacio li {
-        flex: 1;
     }
 
 }
