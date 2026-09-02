@@ -14,4 +14,4 @@ Le Contes es un sitio web de una pastelería artesanal desarrollado como proyect
 - GitHub
 ## Sitio web
 
-[Ver sitio Le Contes](https://github.com/ceciliaberon/Desarrollo_Web_94785/blob/main/index.html)
+[Ver sitio Le Contes](https://ceciliaberon.github.io/Desarrollo_Web_94785/)
