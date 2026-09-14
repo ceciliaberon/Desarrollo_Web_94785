@@ -1,34 +1,57 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 main {
-    padding: 20px;
+    width: 100%;
+}
 
-    .hero {
-        @include caja-flex(center, center, 10px);
-        flex-direction: column;
-        background-color: $bg-log;
-        padding: 20px;
+section {
+    @include flex-column($espaciado-medio);
+    padding: $espaciado-medio;
+    margin-bottom: $espaciado-grande;
+}
 
-        h2 {
-            font-family: $font-titulo;
-            color: $color-letra;
-        }
+h1 {
+    font-size: 30px;
+    color: $color-texto;
+}
 
-        p {
-            font-family: $font-subtitulos;
-        }
+h2 {
+    font-size: 26px;
+    color: $color-texto;
+}
 
-        button {
-            padding: $padding-carteles;
-            background-color: $bg-header;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
+h3 {
+    font-size: 20px;
+    color: $color-texto;
+}
+
+p {
+    font-size: 16px;
+    color: $color-texto;
+}
+
+.opiniones {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "contenido";
+    gap: $espaciado-medio;
+    background-color: $color-claro;
+    padding: $espaciado-medio;
+    border-radius: $radio-borde;
+
+    h2 {
+        grid-area: titulo;
     }
-        .card {
-        h4 {
-            font-family: $font-subtitulos;
-        }
+
+    .opinion_contenedor {
+        grid-area: contenido;
+        @include flex-column($espaciado-medio);
+    }
+}
+
+@media (min-width: 1024px) {
+    .opinion_contenedor {
+        flex-direction: row;
     }
 }

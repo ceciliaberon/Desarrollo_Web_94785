@@ -1,16 +1,25 @@
-
+@use '../utilities/variables' as *;
 // MIXINS
 
-@mixin caja-flex($justify, $align, $gap) {
+@mixin flex-column($gap: 20px) {
     display: flex;
-    justify-content: $justify;
-    align-items: $align;
+    flex-direction: column;
     gap: $gap;
 }
 
-@mixin card($altura, $ancho, $padding, $margin) {
-    height: $altura;
-    width: $ancho;
-    padding: $padding;
-    margin: $margin;
+@mixin estado-interactivo($color-hover) {
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        color: $color-hover;
+    }
+
+    &:focus {
+        outline: 2px solid $color-hover;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        color: $color-texto;
+    }
 }

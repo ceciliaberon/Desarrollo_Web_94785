@@ -3,15 +3,47 @@
 
 // CLASES
 
-.productos {
-    @include card(100px, 300px, 4px, null);
-    background-color: green;
-    color: white;
+.datos-contacto {
+    background-color: $color-contacto;
+    border-radius: $radio-borde;
+    padding: $espaciado-grande;
 
-    @include caja-flex(center, center, 3px);
+    figure {
+        margin-bottom: $espaciado-medio;
+    }
 }
 
-.publicidad {
-    @extend .productos;
-    color: red;
+.imagen {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    padding: $espaciado-medio;
+
+    .carousel-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: auto;
+        border: 40px solid $color-blanco;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: 2px solid $color-texto;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
 }
