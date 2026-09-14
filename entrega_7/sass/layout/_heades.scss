@@ -1,0 +1,77 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// NESTING
+
+header {
+    background-color: $bg-header;
+    height: $altura-header;
+    padding: 10px;
+
+    @include caja-flex(space-between, center, null);
+
+    h1 {
+        font-family: $font-titulo;
+        color: $color-letra;
+    }
+
+    nav ul {
+        @include caja-flex(null, null, 5px);
+
+        li {
+            list-style: none;
+
+            a {
+                color: $color-letra;
+                background-color: black;
+                padding: $padding-carteles;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    div a {
+        color: $color-letra;
+        background-color: $bg-log;
+        padding: $padding-carteles;
+        border-radius: 5px;
+    }
+}
+
+
+// NESTING
+
+header {
+    background-color: $bg-header;
+    height: $altura-header;
+    padding: 10px;
+
+    @include caja-flex(space-between, center, null);
+
+    h1 {
+        font-family: $font-titulo;
+        color: $color-letra;
+    }
+
+    nav ul {
+        @include caja-flex(null, null, 5px);
+
+        li {
+            list-style: none;
+
+            a {
+                color: $color-letra;
+                background-color: black;
+                padding: $padding-carteles;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    div a {
+        color: $color-letra;
+        background-color: $bg-log;
+        padding: $padding-carteles;
+        border-radius: 5px;
+    }
+}

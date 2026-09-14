@@ -1,0 +1,34 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+main {
+    padding: 20px;
+
+    .hero {
+        @include caja-flex(center, center, 10px);
+        flex-direction: column;
+        background-color: $bg-log;
+        padding: 20px;
+
+        h2 {
+            font-family: $font-titulo;
+            color: $color-letra;
+        }
+
+        p {
+            font-family: $font-subtitulos;
+        }
+
+        button {
+            padding: $padding-carteles;
+            background-color: $bg-header;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+        .card {
+        h4 {
+            font-family: $font-subtitulos;
+        }
+    }
+}

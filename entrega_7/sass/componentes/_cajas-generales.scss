@@ -1,0 +1,17 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// CLASES
+
+.productos {
+    @include card(100px, 300px, 4px, null);
+    background-color: green;
+    color: white;
+
+    @include caja-flex(center, center, 3px);
+}
+
+.publicidad {
+    @extend .productos;
+    color: red;
+}
